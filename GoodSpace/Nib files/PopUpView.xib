@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpView" customModule="GoodSpace" customModuleProvider="target">
+            <connections>
+                <outlet property="correctTextFieldText" destination="772-NA-qwh" id="HoO-Vt-8gr"/>
+                <outlet property="popUpVerifyButton" destination="brY-te-W4x" id="hBg-t6-rtJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopUpView" customModule="GoodSpace" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdG-a1-NMh">
+                    <rect key="frame" x="29" y="259" width="335" height="359"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Correct Phone Number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8m-Ib-z3D">
+                            <rect key="frame" x="12" y="15" width="311" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcW-uY-q1w">
+                            <rect key="frame" x="218" y="251" width="0.0" height="46"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter mobile no." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="772-NA-qwh">
+                            <rect key="frame" x="12" y="111" width="311" height="55"/>
+                            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="xA6-qJ-4Vv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brY-te-W4x">
+                            <rect key="frame" x="16" y="289" width="303" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="fXl-M5-cPU"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="Verify Phone">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="popUpVerifyButtonPressed:" destination="-1" eventType="touchUpInside" id="lyh-tS-fws"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please be sure to select the correct area code and enter 10 digits" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdG-Gx-sug">
+                            <rect key="frame" x="26" y="181" width="283" height="40.666666666666657"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="772-NA-qwh" firstAttribute="leading" secondItem="RdG-a1-NMh" secondAttribute="leading" constant="12" id="DVH-Rm-hjj"/>
+                        <constraint firstAttribute="trailing" secondItem="kdG-Gx-sug" secondAttribute="trailing" constant="26" id="EDv-lC-Mof"/>
+                        <constraint firstAttribute="trailing" secondItem="Y8m-Ib-z3D" secondAttribute="trailing" constant="12" id="Kal-Eq-yNS"/>
+                        <constraint firstAttribute="bottom" secondItem="brY-te-W4x" secondAttribute="bottom" constant="10" id="MLA-KN-g1n"/>
+                        <constraint firstItem="772-NA-qwh" firstAttribute="top" secondItem="Y8m-Ib-z3D" secondAttribute="bottom" constant="66" id="Uaa-MX-mWa"/>
+                        <constraint firstAttribute="trailing" secondItem="brY-te-W4x" secondAttribute="trailing" constant="16" id="VQe-89-LpX"/>
+                        <constraint firstAttribute="trailing" secondItem="772-NA-qwh" secondAttribute="trailing" constant="12" id="bVw-X5-r65"/>
+                        <constraint firstItem="brY-te-W4x" firstAttribute="leading" secondItem="RdG-a1-NMh" secondAttribute="leading" constant="16" id="eG6-jA-09M"/>
+                        <constraint firstItem="Y8m-Ib-z3D" firstAttribute="top" secondItem="RdG-a1-NMh" secondAttribute="top" constant="15" id="hiJ-Xg-N1X"/>
+                        <constraint firstItem="kdG-Gx-sug" firstAttribute="leading" secondItem="RdG-a1-NMh" secondAttribute="leading" constant="26" id="u62-7L-vge"/>
+                        <constraint firstItem="kdG-Gx-sug" firstAttribute="top" secondItem="772-NA-qwh" secondAttribute="bottom" constant="15" id="wBG-Tm-2Ew"/>
+                        <constraint firstItem="Y8m-Ib-z3D" firstAttribute="leading" secondItem="RdG-a1-NMh" secondAttribute="leading" constant="12" id="wSf-fl-5bi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RdG-a1-NMh" secondAttribute="bottom" constant="200" id="7fv-PJ-wCA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="RdG-a1-NMh" secondAttribute="trailing" constant="29" id="8Ss-xz-c1r"/>
+                <constraint firstItem="RdG-a1-NMh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="200" id="FIm-0o-aJE"/>
+                <constraint firstItem="RdG-a1-NMh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="29" id="Ytb-p9-MKC"/>
+            </constraints>
+            <connections>
+                <outlet property="correctTextFieldText" destination="772-NA-qwh" id="BqO-3h-IPj"/>
+            </connections>
+            <point key="canvasLocation" x="20.610687022900763" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
